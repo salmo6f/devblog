@@ -1,0 +1,110 @@
+:root{
+  --app-primary: #2457ff;
+  --app-dark: #0b1020;
+}
+
+.app-bg{
+  background:
+    radial-gradient(1200px 600px at 15% 0%, rgba(36,87,255,.18), transparent 55%),
+    radial-gradient(900px 500px at 85% 10%, rgba(0, 200, 255, .12), transparent 55%),
+    #f6f8ff;
+  min-height: 100vh;
+}
+
+.app-navbar{
+  background: rgba(255,255,255,.86);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(15,23,42,.08);
+}
+
+.app-card{
+  border: 0;
+  border-radius: 16px;
+}
+
+.app-card .card-body{
+  padding: 1.25rem;
+}
+
+.app-pill{
+  border-radius: 999px;
+}
+
+.hero{
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background:
+    linear-gradient(135deg, rgba(11,16,32,.92), rgba(21,33,75,.78)),
+    url("https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=2000&q=80");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.hero:after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(800px 450px at 15% 20%, rgba(36,87,255,.35), transparent 60%),
+    radial-gradient(700px 400px at 85% 30%, rgba(0,200,255,.22), transparent 65%);
+  pointer-events: none;
+}
+
+.hero > *{
+  position: relative;
+  z-index: 1;
+}
+
+.icon-badge{
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.18);
+  backdrop-filter: blur(8px);
+}
+
+.soft-icon{
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(36,87,255,.10);
+  border: 1px solid rgba(36,87,255,.18);
+  color: var(--app-primary);
+}
+
+.glass-card{
+  background: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.18);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+}
+
+.step-card{
+  border-radius: 16px;
+  border: 1px solid rgba(15,23,42,.10);
+  background: #fff;
+}
+
+.auth-visual{
+  border-radius: 18px;
+  background:
+    linear-gradient(135deg, rgba(11,16,32,.90), rgba(36,87,255,.25)),
+    url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1400&q=80");
+  background-size: cover;
+  background-position: center;
+  min-height: 420px;
+  color: #fff;
+}
+
+.auth-visual .muted{
+  color: rgba(255,255,255,.75);
+}
